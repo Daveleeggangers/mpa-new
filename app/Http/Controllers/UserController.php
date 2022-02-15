@@ -12,4 +12,9 @@ class UserController extends Controller
         $data= user::all();
         return view('opdracht',['users'=>$data]);
     }
+    function view()
+    {
+        $data= user::all();
+        return view('view',['users'=>$data]);
+    }
 }
